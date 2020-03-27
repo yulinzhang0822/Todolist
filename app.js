@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 // Connect with MongoDB using Mongoose
-mongoose.connect("mongodb+srv://admin-yulin:zyllxh08221024%23GZ@cluster0-yanef.mongodb.net/todolistDB", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://username:<password>@cluster0-yanef.mongodb.net/todolistDB", {useNewUrlParser: true});
 
 // Create a schema of a collection
 const itemsSchema = {
